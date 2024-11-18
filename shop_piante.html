@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabacchi Cesario</title>
+  <link rel="stylesheet" href="style_shop_piante.css">
+  <!-- link al CSS di bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" target="_blank">
+      <img src="imgs/logo.avif" class="logo" alt="Logo">
+    </a>
+    <input type="checkbox" id="menu-btn" class="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+      <span class="nav-icon"></span>
+    </label>
+    <ul class="menu">
+      <li><a href="index.html"><strong>Homepage</strong></a></li>
+      <li><a href="login.html" target="_blank"><strong>Login</strong></a></li>
+      <li><a href="contatti.html" target="_blank"><strong>Registrati</strong></a></li>
+      <li>
+        <a href="#"><strong>Shop</strong></a>
+        <ul class="shop">
+          <li><a href="shop_piante.html" target="_blank">Piante</a></li>
+          <li><a href="shop_borse.html" target="_blank">Borse</a></li>
+          <li><a href="shop_gioielli.html" target="_blank">Gioielli</a></li>
+        </ul>
+      </li>
+      <li><a href="carrello.html" target="_blank"><strong>Carrello</strong></a></li>
+    </ul>
+  </header>
+  <main>
+
+
+    <!-- Gallery -->
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Peperomia obtusifolia</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contenitore immagine con ribbon -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <!--  <div class="ribbon2">-10%</div> -->
+                <img src="imgs/pianta1.JPG" alt="Pianta 1" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €7</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Zamioculcas Zamiifolia</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta2.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Zamioculcas Zamiifolia.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €18</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Mantenere costantemente il terriccio umido.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- bottone -->
+            <div class="container">
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <button type="button" class="btn btn-light"
+                    onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine-->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Potos</strong></p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <!-- <div class="ribbon2">-10%</div> -->
+                <img src="imgs/pianta5.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Potos.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €6</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Ogni 4-5 giorni in estate, 1 volta a settimana in inverno.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Ficus Robusta</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <div class="effect">
+                  <img src="imgs/pianta4.JPG" alt="Pianta 4" class="img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Ficus Robusta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €15</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Innaffia solo quando i primi 3-4 cm di substrato sono completamente
+                          asciutti.
+                          Ha
+                          bisogno di molta meno acqua in inverso che in estate.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" disabled>Esaurito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Ficus Robusta</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta6.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Ficus Robusta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €15</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Innaffia solo quando i primi 3-4 cm di substrato sono completamente
+                          asciutti.
+                          Ha
+                          bisogno di molta meno acqua in inverso che in estate.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine-->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Yucca</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contenitore immagine con ribbon -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <!-- <div class="ribbon">NEW</div> -->
+                <img src="imgs/pianta7.JPG" alt="Pianta 1" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Yucca.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €15</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Pieno sole.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Va innaffianta abbondantemente soprattutto nei mesi caldi. Il
+                          consiglio è di
+                          attendere tra un'innaffiatura e l'altra che si asciughi completamente il terriccio.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Succulente</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta8.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Succulente.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €2 al pezzo</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Lasciar asciugare completamente il terreno tra un'innaffiatura e
+                          l'altra.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Calatea</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta9.JPG" alt="Pianta 1" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Calatea.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €16</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Irrigazioni frequanti evitando i ristagni.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Fico beniamino</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta10.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Fico beniamino.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €7</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Ogni 4-5 giorni in estate, ogni 8-10 giorni in inverno.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Syngonium podophyllum</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta11.JPG" alt="Pianta 1" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Syngonium podophyllum.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €7</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Mezz'ombra, buona illuminazione.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Regolare al fine di mantenere il terreno sempre leggermente umido.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Zamioculcas zamiifolia</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contenitore immagine con ribbon -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <!-- <div class="ribbon">NEW</div> -->
+                <img src="imgs/pianta12.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Zamioculcas zamiifolia.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €16</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Da aprile a settembre ogni 7-10 giorni, in autunno-inverno anche una
+                          volta al
+                          mese.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Potos</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta13.JPG" alt="Pianta 1" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Potos.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €20</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Schefflera arbicola</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta14.JPG" alt="Pianta 1" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Schefflera arboricola.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €15</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Annaffia solo quando il terreno in superficie riisulta asciutto al
+                          tatto.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Potos</strong></p>
+              </div>
+            </div>
+
+          </div>
+          <!-- Contenitore immagine con ribbon -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <!-- <div class="ribbon">NEW</div> -->
+                <img src="imgs/pianta15.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Potos.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €6</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Ogni 4-5 giorni in estate, 1 volta a settimana in inverno.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Sanseveria</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta16.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Lingua di suocera.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €20</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row gallery-container">
+        <div class="col p-4">
+
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Radermachera sinica</strong></p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- immagine -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta17.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Radermachera sinica.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €20</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Annaffia almeno una volta a settimana senza ristagni.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!--footer-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3><strong><a href="index.html">Tabacchi Cesario</a></strong></h3>
+        <strong>Indirizzo:</strong>
+        <p>Via XX Settembre 104</p>
+        <strong>Contatti:</strong>
+        <p><strong>tel:</strong> +39 0984 180 3006</p>
+        <p><strong>email:</strong> <a href="mailto:monica.cesario98@icloud.com">monica.cesario98@icloud.com</a></p>
+        <div class="social-media">
+
+          <!--link Facebook-->
+          <a href="https://www.facebook.com/profile.php?id=100075942254236" target="_blank">
+            <img src="imgs/facebook.png" alt="Facebook" class="facebook-logo">
+          </a>
+
+          <!-- Link a WhatsApp -->
+          <a href="https://wa.me/393515914071" target="_blank">
+            <img src="imgs/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+          </a>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <!-- Mappa dinamica per San Fili, Cosenza -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.778849259464!2d16.1738593!3d39.3179248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133f9f887eaaaaab%3A0x881ab9b33d9f9a2e!2sSan%20Fili%2C%20CS!5e0!3m2!1sit!2sit!4v1635800211445!5m2!1sit!2sit"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+        <!-- Link che apre San Fili su Google Maps -->
+        <a href="https://www.google.com/maps/place/San+Fili,+CS/@39.3179248,16.1738593,14z" target="_blank"
+          class="map-link">Visualizza su Google Maps</a>
+      </div>
+
+
+
+
+
+
+    </div>
+  </footer>
+  <!--/footer-->
+
+
+  <!-- link al JS bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
