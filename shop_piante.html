@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabacchi Cesario</title>
+  <title>Shop piante</title>
+
+  <!-- link al mio CSS-->
   <link rel="stylesheet" href="style_shop_piante.css">
+
   <!-- link al CSS di bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -37,20 +40,21 @@
       <li><a href="carrello.html" target="_blank"><strong>Carrello</strong></a></li>
     </ul>
   </header>
-  <main>
 
+
+  <main>
 
     <!-- Gallery -->
 
     <div class="container d-flex flex-column align-items-center">
       <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
-            <div class="row justify-content-between">
+            <div class="row justify-content-between align-items-center">
               <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
+                <img src="imgs/foglia.png" class="max-view-80 abc">
               </div>
               <div class="text col-8">
                 <p><strong>Peperomia obtusifolia</strong></p>
@@ -60,7 +64,7 @@
 
           <!-- Contenitore immagine con ribbon -->
           <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
               <div class="col d-flex justify-content-center">
                 <!--  <div class="ribbon2">-10%</div> -->
                 <img src="imgs/pianta1.JPG" alt="Pianta 1" class="img">
@@ -107,12 +111,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -125,7 +124,7 @@
               </div>
             </div>
           </div>
-
+  
           <!-- immagine -->
           <div class="container">
             <div class="row justify-content-center">
@@ -134,7 +133,7 @@
               </div>
             </div>
           </div>
-
+  
           <!-- menu a tendina -->
           <div class="container">
             <div class="row">
@@ -162,7 +161,7 @@
                 </div>
               </div>
             </div>
-
+  
             <!-- bottone -->
             <div class="container">
               <div class="row">
@@ -174,12 +173,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine-->
           <div class="immagine container">
@@ -244,12 +238,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -315,12 +304,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -380,17 +364,13 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine-->
           <div class="immagine container">
@@ -449,17 +429,13 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -516,17 +492,74 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+          <!-- logo e scritta sopra l'immagine -->
+          <div class="immagine container">
+            <div class="row justify-content-between">
+              <div class="image col-4">
+                <img src="imgs/foglia.png" class="w-100">
+              </div>
+              <div class="text col-8">
+                <p><strong>Fico beniamino</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col d-flex justify-content-center">
+                <img src="imgs/pianta10.JPG" alt="Pianta" class="img">
+              </div>
+            </div>
+          </div>
+
+          <!-- menu a tendina -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="dropdown-content">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      INFO
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <p><strong>Nome:</strong> Fico beniamino.</p>
+                      </li>
+                      <li>
+                        <p><strong>Prezzo:</strong> €7</p>
+                      </li>
+                      <li>
+                        <p><strong>Luce:</strong> Luce indiretta.</p>
+                      </li>
+                      <li>
+                        <p><strong>Acqua:</strong> Ogni 4-5 giorni in estate, ogni 8-10 giorni in inverno.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bottone -->
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -583,83 +616,13 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
-
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Fico beniamino</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta10.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Fico beniamino.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €7</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Ogni 4-5 giorni in estate, ogni 8-10 giorni in inverno.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -716,17 +679,13 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -785,17 +744,13 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -848,18 +803,13 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -915,17 +865,13 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -982,17 +928,13 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -1046,17 +988,13 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col p-4">
+        <div class="col-sm col-md-4 col-lg-3 p-4">
 
           <!-- logo e scritta sopra l'immagine -->
           <div class="immagine container">
@@ -1114,13 +1052,18 @@
           <div class="container">
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" onclick="window.open('carrello.html', '_blank');">Acquista</button>
+                <button type="button" class="btn btn-light"
+                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
               </div>
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
+
+   
 
   </main>
   <!--footer-->
