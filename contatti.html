@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrati</title>
+
+  <link rel="stylesheet" href="style_contatti.css">
+</head>
+
+<body>
+  <div class="opacizzata"></div>
+  <!-- header -->
+ <header class="header">
+  <!-- logo -->
+  <a href="index.html">
+    <img src="imgs/logo.avif" class="logo" alt="Logo">
+  </a>
+  <!-- /logo -->
+
+  <input type="checkbox" id="menu-btn" class="menu-btn">
+  <!--ICONA (hamburger)-->
+  <label for="menu-btn" class="menu-icon">
+    <span class="nav-icon"></span>
+  </label>
+  <!-- menu -->
+  <ul class="menu">
+
+    
+    <li><a href="contatti.html" target="_blank"><strong>Login</strong></a></li>
+    <li>
+      <a href="#" target="_blank"><strong>Shop</strong></a>
+      <ul class="shop">
+        <li><a href="shop_piante.html" target="_blank">Piante</a></li>
+        <li><a href="shop_borse.html" target="_blank">Borse</a></li>
+        <li><a href="shop_gioielli.html" target="_blank">Gioielli</a></li>
+      </ul>
+    </li>
+    <li><a href="carrello.html" target="_blank"><strong>Carrello</strong></a></li>
+  </ul>
+  <!-- /menu -->
+
+</header>
+<!-- /header -->
+  <main>
+    <div>
+      <h1><strong><a href="index.html">Tabacchi Cesario</a></strong></h1>
+      <h2>Compila il nostro form, registrati e lasciaci una recensione!</h2>
+    </div>
+
+    <div class="container">
+      <!-- form -->
+      <form id="registration-form">
+        <!-- campo di testo -->
+        <div class="form-group">
+          <label for="nome_completo">NOME E COGNOME</label>
+          <input type="text" id="nome_completo" name="nome_completo" placeholder="Inserisci qui il tuo nome completo">
+        </div>
+
+        <div class="form-group">
+          <!-- campo età (numerico) -->
+          <label for="eta">ETA'</label>
+          <input type="number" name="eta" id="eta" min="0" placeholder="Inserisci la tua età">
+        </div>
+
+        <div class="form-group">
+          <!-- campo data -->
+          <label for="data_nascita">DATA DI NASCITA</label>
+          <input type="date" name="data_nascita" id="data_nascita" placeholder="Inserisci la tua data di nascita">
+        </div>
+
+        <div class="form-group">
+          <!-- campo telefono-->
+          <label for="telefono">TELEFONO</label>
+          <input type="tel" name="telefono" id="telefono" placeholder="Inserisci il tuo numero di telefono">
+        </div>
+
+        <div class="form-group">
+          <!-- campo email-->
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" placeholder="Inserisci la tua email">
+        </div>
+
+        <div class="form-group">
+          <!-- campo password-->
+          <label for="password">PASSWORD</label>
+          <div class="password-wrapper">
+            <input type="password" name="password" id="password" placeholder="Inserisci la password">
+            <i class="toggle-password" id="toggle-password" style="cursor: pointer; font-size: 1.2em;">
+              &#128065;
+            </i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <!-- radio button layout -->
+          <label>GENERE:</label>
+          <div class="radio-group">
+            <label for="maschio">MASCHIO</label>
+            <input type="radio" name="genere" id="maschio" value="maschio">
+
+            <label for="femmina">FEMMINA</label>
+            <input type="radio" name="genere" id="femmina" value="femmina">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <!-- menu a tendina -->
+          <label for="regione">REGIONE</label>
+          <select name="regione" id="regione">
+            <option value=""></option>
+            <option value="molise">MOLISE</option>
+            <option value="veneto">VENETO</option>
+            <option value="abruzzo">ABRUZZO</option>
+            <option value="lazio">LAZIO</option>
+            <option value="toscana">TOSCANA</option>
+            <option value="calabria">CALABRIA</option>
+            <option value="sicilia">SICILIA</option>
+            <option value="campania">CAMPANIA</option>
+            <option value="basilicata">BASILICATA</option>
+            <option value="lombardia">LOMBARDIA</option>
+            <option value="emilia_romagna">EMILIA ROMAGNA</option>
+            <option value="puglia">PUGLIA</option>
+            <option value="sardegna">SARDEGNA</option>
+            <option value="trentino_alto_adige">TRENTINO ALTO ADIGE</option>
+            <option value="friuli_venezia_giulia">FRIULI-VENEZIA GIULIA</option>
+            <option value="marche">MARCHE</option>
+            <option value="liguria">LIGURIA</option>
+            <option value="umbria">UMBRIA</option>
+            <option value="piemonte">PIEMONTE</option>
+            <option value="valle_d_aosta">VALLE D'AOSTA</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <!-- area di testo -->
+          <label for="recensione">LASCIA UNA RECENSIONE</label>
+          <textarea name="recensione" id="recensione" cols="30" rows="5"
+            placeholder="Lascia una recensione..."></textarea>
+        </div>
+
+        <div class="submit-container">
+          <!-- pulsante di invio -->
+          <button type="submit">Registrati</button>
+        </div>
+
+        <!-- social -->
+        <div class="social-media">
+          <!--link a Facebook-->
+          <a href="https://www.facebook.com/profile.php?id=100075942254236" target="_blank">
+            <img src="imgs/facebook.png" alt="Facebook" class="facebook-logo">
+          </a>
+          <!-- Link a WhatsApp -->
+          <a href="https://wa.me/393515914071" target="_blank">
+            <img src="imgs/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+          </a>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <script>
+    // Gestione del submit del form
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Previene l'invio del form
+
+      // Recupera i valori dei campi
+      const nomeCompleto = document.getElementById('nome_completo').value.trim();
+      const eta = document.getElementById('eta').value.trim();
+      const dataNascita = document.getElementById('data_nascita').value.trim();
+      const telefono = document.getElementById('telefono').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const regione = document.getElementById('regione').value.trim();
+
+      // Controlla se tutti i campi sono compilati
+      if (!nomeCompleto || !eta || !dataNascita || !telefono || !email || !password || !regione) {
+        alert("Compila tutti i campi!");
+        return;
+      }
+
+      // Controlla la lunghezza della password
+      if (password.length < 6) {
+        alert("La password deve contenere almeno sei caratteri!");
+        return;
+      }
+
+      // Se tutti i controlli passano, invia il form (puoi implementare la logica di invio qui)
+      alert("Registrazione effettuata con successo!");
+    });
+
+    // Gestione visualizzazione password
+    const togglePassword = document.getElementById('toggle-password');
+    const passwordInput = document.getElementById('password');
+
+    togglePassword.addEventListener('click', function() {
+      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInput.setAttribute('type', type);
+      this.innerHTML = type === 'password' ? '&#128065;' : '&#128584;'; // Occhio normale e occhio chiuso
+    });
+  </script>
+</body>
+
+</html>

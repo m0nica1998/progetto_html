@@ -1,0 +1,122 @@
+.main-container {
+  margin: 40px auto; /* Margine superiore e ai lati della pagina */
+  max-width: 1200px; /* Limita la larghezza della pagina */
+  padding: 0 20px; /* Spaziatura interna ai lati */
+}
+
+.testo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra orizzontalmente */
+  height: 20vh; /* Facoltativo, per occupare l'intera altezza della finestra */
+  text-align: center; /* Allinea il testo */
+}
+
+
+.testo a {
+  text-decoration: none;
+  color: rgb(156, 12, 12);
+  font-weight: bold;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  flex: 25%;
+}
+
+.col-50 {
+  flex: 50%;
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+.col-25, .col-50, .col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: 1px solid #555;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+/* Centrare il bottone */
+.button {
+  display: flex;
+  justify-content: center; /* Centro orizzontale */
+  margin-top: 20px; /* Spaziatura superiore per separarlo dagli altri elementi */
+}
+
+.btn {
+  background-color: rgb(156, 12, 12) !important; /* Forza il colore */
+  color: lightgray !important;
+  padding: 12px;
+  border: 1px solid #555 !important;
+  width: 40%;
+  border-radius: 10px !important;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold !important;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  color: white !important;
+}
+
+
+.custom-link {
+  text-decoration: none;
+  color: rgb(156, 12, 12);
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 80%;
+  }
+}

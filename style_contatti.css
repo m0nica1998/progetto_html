@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  background-image: url(imgs/carousel1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aggiungi un contenitore per centrare gli input */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
+  background-color: lightgrey;
+  width: 50%;
+  border: 1px solid #555; 
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+
+main {
+  z-index: 3;
+  padding-top: 50px;
+}
+
+.opacizzata {   
+  opacity: 0.5; 
+  z-index: 1;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+
+
+}
+
+/* Stile per l'header */
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+/* Stile per la lista del menu */
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: gray;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.header ul a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: lightgray;
+}
+
+.header ul a:hover {
+  color: rgb(156, 12, 12); /* Cambia il colore del testo al passaggio del mouse */
+}
+
+/* Contenitore per l'icona hamburger */
+.header .menu-icon {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px 20px;
+  cursor: pointer;
+  display: none; /* Nascondi l'icona in modalità desktop */
+}
+
+/* Stile per le linee dell'hamburger */
+.header .menu-icon .nav-icon {
+  display: block;
+  background-color: lightgray;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after {
+  background-color: lightgray;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+  top: -5px;
+}
+
+/* Nasconde la casella di checkbox ma lascia la funzionalità */
+.header .menu-btn {
+  display: none;
+}
+
+/* Anima l'hamburger in una X quando è attivo */
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Stile per il sottomenu (inizialmente nascosto) */
+.menu .shop {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  list-style-type: none;
+  padding: 5px;
+  border: 1px solid gray;
+  margin-top: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Mostra il sottomenu anche in modalità mobile quando si passa sopra "Shop" */
+.menu li:hover .shop {
+  display: block;
+}
+
+/* Stile per le voci del sottomenu */
+.menu .shop li {
+  padding: 5px 10px;
+  color: gray;
+}
+
+/* Cambia il colore delle voci del sottomenu in rosso al passaggio del mouse */
+.menu .shop li:hover {
+  color: rgb(156, 12, 12);
+  
+}
+
+/* Contenitore principale */
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+/* logo */
+.logo {
+  width: 100px;
+  margin: 0 10px;
+  padding: 0;
+  border-radius: 100px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* titoli */
+h1 {
+  transition: transform 0.3s ease; 
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+/* link */
+a {
+  text-decoration: none;
+  color: rgb(156, 12, 12); 
+}
+
+/* Layout compatto per label e input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra etichette e input */
+  margin-bottom: 10px; /* Spazio regolabile tra i campi */
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Piccolo spazio tra label e input */
+  text-align: center;
+  width: 100%; /* Fa in modo che il label occupi tutta la larghezza dell'input */
+}
+
+/* Per centrare il bottone di invio */
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Radio buttons layout in a row */
+.radio-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Distanza tra le opzioni */
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: black;
+}
+
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="tel"], select, textarea {
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+  width: 60vw; /* Larghezza adattiva */
+  max-width: 500px; /* Limita la larghezza massima */
+  padding: 10px;
+  margin-top: 5px;
+  min-width: 200px; /* Limita la larghezza minima */
+}
+
+input[type="email"]:focus, input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="tel"]:focus, textarea:focus,
+input[type="password"]:focus {
+  border-color: rgb(156, 12, 12); /* Cambia colore al focus */
+}
+
+/* Stile per il placeholder */
+input::placeholder, textarea::placeholder {
+  font-size: 16px; /* Cambia la dimensione del font */
+}
+
+
+
+button {
+  border: 1px solid #555;
+  background-color: rgb(156, 12, 12);
+  color: lightgray;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+
+.radio-group label {
+  margin-bottom: 0; /* Rimuovi il margine inferiore per allineare il testo */
+}
+
+.social-media {
+  margin-top: 20px;          /* Distanza tra il contenuto principale e le icone */
+}
+
+.facebook-logo, .whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  border-radius: 100px;
+}
+
+.facebook-logo:hover, .whatsapp-icon:hover {
+  transform: scale(1.2); /* Aumenta leggermente la dimensione al passaggio del mouse */
+}
+
+
+/* Stile specifico per dispositivi mobili */
+@media (max-width: 578px) {
+  .header .menu {
+    display: none; /* Nasconde il menu in modalità mobile */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 120px; /* Porta il menu più in basso */
+    background-color: gray; /* Colore di sfondo grigio */
+    z-index: 1;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+    display: flex; /* Mostra il menu quando l'hamburger è attivo */
+  }
+
+  .header ul a {
+    color: lightgray;
+  }
+
+  .header ul a:hover {
+    color: rgb(156, 12, 12); /* Colore delle scritte rosso al passaggio del mouse */
+  }
+
+  .header .menu-icon {
+    display: block; /* Mostra l'icona dell'hamburger */
+  }
+
+  /* Stile per il sottomenu in modalità mobile */
+  .menu .shop {
+    position: relative;
+    background-color: gray;
+    color: lightgray;
+  }
+}
+
+/* Stile specifico per dispositivi desktop */
+@media (min-width: 579px) {
+  .header .menu {
+    display: flex; /* Mostra il menu */
+  }
+
+  .header .menu-icon {
+    display: none; /* Nasconde l'icona dell'hamburger */
+  }
+}
+

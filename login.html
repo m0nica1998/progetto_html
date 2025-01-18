@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <!-- link al mio CSS -->
+  <link rel="stylesheet" href="style_login.css">
+
+  <!-- link a font awesom -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+ <!-- header -->
+ <header class="header">
+  <!-- logo -->
+  <a href="index.html">
+    <img src="imgs/logo.avif" class="logo" alt="Logo">
+  </a>
+  <!-- /logo -->
+
+  <input type="checkbox" id="menu-btn" class="menu-btn">
+  <!--ICONA (hamburger)-->
+  <label for="menu-btn" class="menu-icon">
+    <span class="nav-icon"></span>
+  </label>
+  <!-- menu -->
+  <ul class="menu">
+
+    
+    <li><a href="contatti.html" target="_blank"><strong>Registrati</strong></a></li>
+    <li>
+      <a href="#" target="_blank"><strong>Shop</strong></a>
+      <ul class="shop">
+        <li><a href="shop_piante.html" target="_blank">Piante</a></li>
+        <li><a href="shop_borse.html" target="_blank">Borse</a></li>
+        <li><a href="shop_gioielli.html" target="_blank">Gioielli</a></li>
+      </ul>
+    </li>
+    <li><a href="carrello.html" target="_blank"><strong>Carrello</strong></a></li>
+  </ul>
+  <!-- /menu -->
+
+</header>
+<!-- /header -->
+  <main>
+   
+    <!-- modulo di login -->
+    <div class="container">
+      
+      <!-- titolo e logo -->
+      <h1><a href="index.html" target="_blank">Tabacchi Cesario</a></h1>
+
+      <!-- Linea orizzontale -->
+      <div class="divider"></div>
+
+      <h2>Accedi!</h2>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email">EMAIL</label>
+          <div class="input-container">
+            <img src="imgs/email.png" alt="User Icon" class="icon">
+            <input type="email" id="email" required placeholder="Inserisci l'email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">PASSWORD</label>
+          <div class="input-container">
+            <img src="imgs/password-icon.png" alt="Lock Icon" class="icon">
+            <input type="password" id="password" required placeholder="Inserisci la password">
+          </div>
+        </div>
+
+        <div class="submit-container">
+          <input type="submit" value="Login">
+        </div>
+
+        <input type="checkbox" checked>Ricordami
+      </form>
+
+      <!-- Linea orizzontale -->
+      <div class="divider"></div>
+
+      <div class="paragrafi">
+        <p>Hai dimenticato la password? <a href="recupera_password.html" target="_blank">Recupera la password</a></p>
+        <p>Non sei ancora registrato? <a href="contatti.html" target="_blank">Registrati</a></p>
+      </div>
+
+      <!-- Logo con link -->
+      <div class="social-media">
+        <!--link a Facebook-->
+        <a href="https://www.facebook.com/profile.php?id=100075942254236" target="_blank">
+          <img src="imgs/facebook.png" alt="Facebook" class="facebook-logo">
+        </a>
+        <!-- Link a WhatsApp -->
+        <a href="https://wa.me/393515914071" target="_blank">
+          <img src="imgs/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+      </div>
+    </div>
+
+    <div class="opacizzata">
+    
+    </div>
+  </main>
+
+  <script>
+    // Gestione del submit del form
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Previene l'invio del form
+
+      // Recupera i valori dei campi
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      // Controlla se tutti i campi sono compilati
+      if (!email || !password) {
+        alert("Compila tutti i campi!");
+        return;
+      }
+
+      // Controlla la lunghezza della password
+      if (password.length < 6) {
+        alert("Il numero di caratteri della password deve essere di almeno sei caratteri!");
+        return;
+      }
+
+      // Se tutti i controlli passano, invia il form (puoi implementare la logica di invio qui)
+      alert("Login effettuato con successo!");
+    });
+  </script>
+</body>
+
+</html>
