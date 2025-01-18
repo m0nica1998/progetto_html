@@ -2,1071 +2,828 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop piante</title>
-
-  <!-- link al mio CSS-->
-  <link rel="stylesheet" href="style_shop_piante.css">
-
-  <!-- link al CSS di bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Resource/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Shop piante</title>
 </head>
 
 <body>
-
-  <!-- Header -->
-  <header class="header">
-    <a href="index.html" target="_blank">
-      <img src="imgs/logo.avif" class="logo" alt="Logo">
-    </a>
-    <input type="checkbox" id="menu-btn" class="menu-btn">
-    <label for="menu-btn" class="menu-icon">
-      <span class="nav-icon"></span>
-    </label>
-    <ul class="menu">
-      <li><a href="index.html"><strong>Homepage</strong></a></li>
-      <li><a href="login.html" target="_blank"><strong>Login</strong></a></li>
-      <li><a href="contatti.html" target="_blank"><strong>Registrati</strong></a></li>
-      <li>
-        <a href="#"><strong>Shop</strong></a>
-        <ul class="shop">
-          <li><a href="shop_piante.html" target="_blank">Piante</a></li>
-          <li><a href="shop_borse.html" target="_blank">Borse</a></li>
-          <li><a href="shop_gioielli.html" target="_blank">Gioielli</a></li>
-        </ul>
-      </li>
-      <li><a href="carrello.html" target="_blank"><strong>Carrello</strong></a></li>
-    </ul>
-  </header>
-
-
-  <main>
-
-    <!-- Gallery -->
-
-    <div class="container d-flex flex-column align-items-center">
-      <div class="row gallery-container">
-        <div class="col-sm col-md-4 col-lg-3 p-4">
-
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between align-items-center">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="max-view-80 abc">
-              </div>
-              <div class="text col-8">
-                <p><strong>Peperomia obtusifolia</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contenitore immagine con ribbon -->
-          <div class="container">
-            <div class="row justify-content-center align-items-center">
-              <div class="col d-flex justify-content-center">
-                <!--  <div class="ribbon2">-10%</div> -->
-                <img src="imgs/pianta1.JPG" alt="Pianta 1" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €7</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> 1 volta a settimana.</p>
-                      </li>
+    <!-- Nav tabs -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-gray py-1 fixed-top">
+            <div class="container-fluid pt-1 pb-1" >
+                <a class="navbar-brand  container-logo border rounded-circle" href="#" >
+                   <!-- <img src="./Resource/IMG/logo.avif" alt="Logo" width="100" height="100"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end fs-5" id="navbarNavDropdown" >
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-1 ">
+                            <a class=" color-lgray hoverRed fw-bold td-none" aria-current="page"
+                                href="index.html">Homepage</a>
+                        </li>
+                        <li class="nav-item p-1 ">
+                            <a class="color-lgray hoverRed fw-bold td-none" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="color-lgray hoverRed fw-bold td-none" href="contatti.html">Registrati</a>
+                        </li>
+                        <li class="nav-item p-1 dropdown  ">
+                            <a class="td-none fw-bold color-lgray hoverRed " href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu bg-gray border-0 text-lg-center shadow-lg" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="fw-bold color-lgray hoverRed td-none" href="shop_piante.html">Piante</a>
+                                </li>
+                                <li><a class="fw-bold color-lgray hoverRed td-none" href="shop_borse.html">Borse</a>
+                                </li>
+                                <li><a class="fw-bold color-lgray hoverRed td-none"
+                                        href="shop_gioielli.html">Gioielli</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item p-1 ">
+                            <a class="hoverRed color-lgray fw-bold td-none" href="carrello.html">Carrello</a>
+                        </li>
                     </ul>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </nav>
+    </header>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Zamioculcas Zamiifolia</strong></p>
-              </div>
-            </div>
-          </div>
-  
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta2.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-  
-          <!-- menu a tendina -->
-          <div class="container">
+
+    <main>
+        <div class="container">
             <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Zamioculcas Zamiifolia.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €18</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Mantenere costantemente il terriccio umido.</p>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold testo-titolo">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center position-relative">
+                                 <div class="ribbon bg-green">-10%</div> 
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-  
-            <!-- bottone -->
-            <div class="container">
-              <div class="row">
-                <div class="col d-flex justify-content-center">
-                  <button type="button" class="btn btn-light"
-                    onclick="window.open('carrello.html', '_blank');">Acquista</button>
+
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold testo-titolo">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
 
-          <!-- logo e scritta sopra l'immagine-->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Potos</strong></p>
-              </div>
-            </div>
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold testo-titolo">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          </div>
-
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <!-- <div class="ribbon2">-10%</div> -->
-                <img src="imgs/pianta5.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Potos.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €6</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Ogni 4-5 giorni in estate, 1 volta a settimana in inverno.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold testo-titolo">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Ficus Robusta</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <div class="effect">
-                  <img src="imgs/pianta4.JPG" alt="Pianta 4" class="img">
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Ficus Robusta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €15</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Innaffia solo quando i primi 3-4 cm di substrato sono completamente
-                          asciutti.
-                          Ha
-                          bisogno di molta meno acqua in inverso che in estate.</p>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light" disabled>Esaurito</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Ficus Robusta</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta6.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Ficus Robusta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €15</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Innaffia solo quando i primi 3-4 cm di substrato sono completamente
-                          asciutti.
-                          Ha
-                          bisogno di molta meno acqua in inverso che in estate.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine-->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Yucca</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contenitore immagine con ribbon -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <!-- <div class="ribbon">NEW</div> -->
-                <img src="imgs/pianta7.JPG" alt="Pianta 1" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Yucca.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €15</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Pieno sole.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Va innaffianta abbondantemente soprattutto nei mesi caldi. Il
-                          consiglio è di
-                          attendere tra un'innaffiatura e l'altra che si asciughi completamente il terriccio.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Succulente</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta8.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Succulente.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €2 al pezzo</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Lasciar asciugare completamente il terreno tra un'innaffiatura e
-                          l'altra.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Fico beniamino</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta10.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Fico beniamino.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €7</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Ogni 4-5 giorni in estate, ogni 8-10 giorni in inverno.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Calatea</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta9.JPG" alt="Pianta 1" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Calatea.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €16</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Irrigazioni frequanti evitando i ristagni.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Syngonium podophyllum</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta11.JPG" alt="Pianta 1" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Syngonium podophyllum.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €7</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Mezz'ombra, buona illuminazione.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Regolare al fine di mantenere il terreno sempre leggermente umido.
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Zamioculcas zamiifolia</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contenitore immagine con ribbon -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <!-- <div class="ribbon">NEW</div> -->
-                <img src="imgs/pianta12.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Zamioculcas zamiifolia.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €16</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Da aprile a settembre ogni 7-10 giorni, in autunno-inverno anche una
-                          volta al
-                          mese.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Potos</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta13.JPG" alt="Pianta 1" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Potos.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €20</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Schefflera arbicola</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta14.JPG" alt="Pianta 1" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Schefflera arboricola.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €15</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Annaffia solo quando il terreno in superficie riisulta asciutto al
-                          tatto.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Potos</strong></p>
-              </div>
-            </div>
-
-          </div>
-          <!-- Contenitore immagine con ribbon -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <!-- <div class="ribbon">NEW</div> -->
-                <img src="imgs/pianta15.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Potos.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €6</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Ogni 4-5 giorni in estate, 1 volta a settimana in inverno.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
+                <div class="col-sm col-md-3 col-lg-3  d-flex flex-column mt-4">
+                    <div class="header-card d-flex ">
+                        <div class="container-foglia col-4 ms-1 me-1 ">
+                         <!--  <img src="./Resource/IMG/foglia.png" class=""> --> 
+                        </div>
+                        <div class="text col-8">
+                            <p class="fw-bold ">Peperomia obtusifolia</p>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col d-flex justify-content-center">
+                                <!--  <div class="ribbon2">-10%</div> -->
+                                <img src="./Resource/IMG/pianta1.JPG" alt="Pianta 1" class="img">
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle td-none info-menu" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        INFO
+                                    </a>
+                                    <ul class="dropdown-menu ps-2 pe-2" aria-labelledby="dropdownMenuButton1" data-bs-display="static">
+                                        <li>
+                                            <p><strong>Nome:</strong> Peperomia obtusifolia.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Prezzo:</strong> €7</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Luce:</strong> Luce indiretta.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Acqua:</strong> 1 volta a settimana.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Sanseveria</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta16.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Lingua di suocera.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €20</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                    </ul>
-                  </div>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex justify-content-center">
+                        <button type="button" class="btn btn-shop " onclick="window.open('carrello.html', '_blank');">
+                            Acquista
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md-4 col-lg-3 p-4">
-
-          <!-- logo e scritta sopra l'immagine -->
-          <div class="immagine container">
-            <div class="row justify-content-between">
-              <div class="image col-4">
-                <img src="imgs/foglia.png" class="w-100">
-              </div>
-              <div class="text col-8">
-                <p><strong>Radermachera sinica</strong></p>
-              </div>
+               
+               
+               
             </div>
 
-          </div>
-
-          <!-- immagine -->
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col d-flex justify-content-center">
-                <img src="imgs/pianta17.JPG" alt="Pianta" class="img">
-              </div>
-            </div>
-          </div>
-
-          <!-- menu a tendina -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-
-                <div class="dropdown-content">
-                  <div class="dropdown">
-                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      INFO
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <p><strong>Nome:</strong> Radermachera sinica.</p>
-                      </li>
-                      <li>
-                        <p><strong>Prezzo:</strong> €20</p>
-                      </li>
-                      <li>
-                        <p><strong>Luce:</strong> Luce indiretta.</p>
-                      </li>
-                      <li>
-                        <p><strong>Acqua:</strong> Annaffia almeno una volta a settimana senza ristagni.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- bottone -->
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light"
-                  onclick="window.open('carrello.html', '_blank');">Acquista</button>
-              </div>
-            </div>
-          </div>
         </div>
 
-
-      </div>
-    </div>
-
-   
-
-  </main>
-  <!--footer-->
+    </main>
+    <!--footer-->
   <footer>
     <div class="footer-container">
       <div class="footer-left">
@@ -1080,12 +837,12 @@
 
           <!--link Facebook-->
           <a href="https://www.facebook.com/profile.php?id=100075942254236" target="_blank">
-            <img src="imgs/facebook.png" alt="Facebook" class="facebook-logo">
+            <img src="./Resource/IMG/facebook.png" alt="Facebook" class="facebook-logo">
           </a>
 
           <!-- Link a WhatsApp -->
           <a href="https://wa.me/393515914071" target="_blank">
-            <img src="imgs/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+            <img src="./Resource/IMG/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
           </a>
         </div>
       </div>
@@ -1111,15 +868,16 @@
   </footer>
   <!--/footer-->
 
-
-  <!-- link al JS bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-
+    <script>
+        var triggerEl = document.querySelector("#navId a");
+        bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
